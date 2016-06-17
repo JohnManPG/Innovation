@@ -1,0 +1,34 @@
+$(document).ready(function(){
+  $(".lo").click(function(){
+  	$(".lall").removeClass("blactv");
+    $(".glyphicon-play").removeClass("tubiao");
+    $(".ta").addClass("tubiao");
+  	$(".lo").addClass("blactv");
+  	$(".hides").hide();
+    $(".heado").show();
+  });
+  $(".la").click(function(){
+  	$(".lall").removeClass("blactv");
+    $(".glyphicon-play").removeClass("tubiao");
+    $(".tb").addClass("tubiao");
+  	$(".la").addClass("blactv");
+  	$(".hides").hide();
+    $(".heada").show();
+  });
+  $(".lb").click(function(){
+  	$(".lall").removeClass("blactv");
+    $(".glyphicon-play").removeClass("tubiao");
+    $(".tc").addClass("tubiao");
+  	$(".lb").addClass("blactv");
+  	$(".hides").hide();
+    $(".headb").show();
+  });
+   $(".lc").click(function(){
+  	$(".lall").removeClass("blactv");
+    $(".glyphicon-play").removeClass("tubiao");
+    $(".td").addClass("tubiao");
+  	$(".lc").addClass("blactv");
+  	$(".hides").hide();
+    $(".headc").show();
+  });
+});

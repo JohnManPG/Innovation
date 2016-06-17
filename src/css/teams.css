@@ -1,0 +1,141 @@
+@media (max-width:767px){
+.container{width:100%;padding:0 ;margin:0;}
+.imgset img{width:100%;}
+.work-image{width:100% !important;}
+.learnmore{margin-left: 42%;}
+h3{font-size: 16px !important;}
+h2,h4{margin-left: 2% !important;}
+.company_name a{font-size:20px !important;}
+.info_top{margin-top:10px;}
+.navbar{margin-bottom: 0 !important;}
+*{font:14px "微软雅黑";}
+hr{margin-bottom: 10px !important;}
+.info_{padding-top:2px;}
+.mobilefanye{float:right !important;margin-right: 20px;}
+.pcfanye{display:none;}
+.container{padding:0 4%;}
+}
+@media (min-width:768px) and (max-width:991px){
+    .imgset img{width:100% !important;}
+        .work-image{width:100% !important;}
+}
+@media (min-width:992px) and (max-width:1199px){
+    .learnmore{margin-top:-15px;margin-bottom: 10px;margin-left: 80%;}
+    .mobilefanye{display:none !important;}
+}
+@media (min-width:1200px){
+.learnmore{margin-top:-10px;margin-bottom: 10px;}
+.work-image{width:445px;height:258px;}
+.info_{font-size: 14px;padding-top:2px;color:#666;}
+.mobilefanye{display:none !important;}
+.info_top{letter-spacing:2px;height:280px;}
+}
+/*全局样式*/
+.tail_2{padding:0 0 10px;}
+.swag { background: url(../images/plants-bg.jpg);width:100%;height:200px;margin-bottom: 20px;}
+.swag h1 { color: #fff; font-size: 2em; letter-spacing: 5px;text-align: center;margin-top:0px; }
+.hea_1{
+    width:200px;height:80px;background-color:rgba(34,34,34,0.5);margin:50px auto;animation: slideInRight 1.5s;
+float: left;margin-left: -15px;}
+#header1{
+    line-height: 80px;
+}
+.pagination li a{color:#666;} 
+p{margin:0;padding:0;}
+*{font-family: "微软雅黑";}
+    h2 { font: 22px '微软雅黑'; margin-left: 15px;}
+    h3 { font: 15px '微软雅黑'; margin:0;}
+hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 25px 30px 15px; height: 0; }
+.company_name{margin:0;}
+.company_name a{color:#66cd00;font-size: 22px;text-decoration: none;}
+.company_name a:hover{color:#4c8812 !important;}
+.row-item:hover{background:#FAFAFA !important;}
+.tags {font: 13px '微软雅黑';color: #c9c9c9;margin: 5px 0;}
+.info_ {margin-bottom:5px;}
+.learnmore{margin-bottom: 10px;}
+.link-overlay {position: absolute;top: 0;left: 0;bottom: 0;  right: 0;background: rgba(0,0,0,0);-webkit-transition: background-color 0.3s ease;transition: background-color 0.3s ease;}
+.work-image:hover .link-overlay { background: rgba(20,22,23,0.6);}
+.work-image:hover  .link-overlay:before {-webkit-transform: scale(1);transform: scale(1);opacity:1;}
+.work-image { display: block;position: relative;z-index: 2; overflow: hidden;box-shadow: 0 1px 1px rgba(0,0,0,0.1);-webkit-transition: box-shadow 0.2s ease;transition: box-shadow 0.2s ease;}
+.work-image img {width: 100%;display: block;-webkit-transition: all 0.2s ease;transition: all 0.2s ease;}
+.work-image:hover img {-webkit-transform: scale(1.1);transform: scale(1.1);}
+/*.work-image{width:90% ;}*/
+.btn-primary{background-color:#90e192;border-color: #ffffff;}
+.btn-primary:hover{ background-color:#66e269 !important;border-color: #ffffff;}
+.work-image{border-radius: 5px;}
+/* Headlines
+==========================*/
+.headline {
+    display: block;
+    border-bottom: 1px solid #DEE1E2;
+    padding: 0 0 10px 0;
+    margin: 0 0 20px;
+    font-size:22px;
+    color:#808080;
+}
+.clients{margin-top: 10px;}
+.left:hover .link-overlay { background: rgba(20,22,23,0.6);}
+.left:hover  .link-overlay:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity:1;
+}
+.clearfix:before,
+    .clearfix:after,
+    .row:before,
+    .row:after {
+      content: '\0020';
+      display: block;
+      overflow: hidden;
+      visibility: hidden;
+      width: 0;
+      height: 0; }
+    .row:after,
+    .clearfix:after {
+      clear: both; }
+    .row,
+    .clearfix {
+      zoom: 1; }
+
+/* Flexisel Styles
+==========================*/
+.clearout {
+height: 20px;
+clear: both;
+}
+
+#flexiselDemo1, #flexiselDemo2, #flexiselDemo3 {
+display: none;
+}
+.nbs-flexisel-container {
+position: relative;
+max-width: 100%;
+}
+.nbs-flexisel-ul {
+position: relative;
+width: 9999px;
+margin: 0px;
+padding: 0px;
+list-style-type: none;
+text-align: center;
+}
+.nbs-flexisel-inner {
+overflow: hidden;
+margin: 0 auto;
+width: 100%;
+}
+.nbs-flexisel-item {
+float: left;
+margin: 0px;
+padding: 0px;
+cursor: pointer;
+position: relative;
+line-height: 0px;
+}
+.nbs-flexisel-item > img {
+cursor: pointer;
+position: relative;
+margin: 0;
+max-width: 100%;
+height: auto;
+}

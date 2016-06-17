@@ -1,0 +1,321 @@
+body{background:-webkit-gradient(linear,left top,left bottom,from(#ccc),
+    color-stop(40%,#fff),color-stop(60%,#fff),to(rgba(210,210,210,1)));}
+/*Title*/
+.swag { background: url(../images/list_head.jpg);width:100%;height:200px;margin-bottom: 20px;}
+.swag h1 { color: #fff; font-size: 2em; letter-spacing: 5px;text-align: center;margin-top:0px; }
+.hea_1{
+    width:200px;height:80px;background-color:rgba(34,34,34,0.5);margin:50px auto;
+    float: left;margin-left: -15px;}
+#header1{
+    line-height: 80px;
+}
+#header1{
+    line-height: 80px;
+}
+
+/*项目小方块*/
+.work {
+    position: relative;
+    margin-bottom:40px;
+    margin-top:10px;
+    border: 4px solid #fff;
+    background:#fff;
+    text-align: center;
+    width:100%;
+}
+.work-image {
+    display: block;
+    position: relative;
+    z-index: 2;
+    overflow: hidden;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    -webkit-transition: box-shadow 0.2s ease;
+    transition: box-shadow 0.2s ease;
+}
+.work-image img {
+    width: 100%;
+    display: block;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 0.8;
+}
+.work-image:hover img {
+    -webkit-transform: scale(1.3) translateY(20px);
+    transform: scale(1.3) translateY(15px);
+    opacity: 1;
+}
+
+.work-image:hover .link-overlay { background: rgba(20,22,23,0.6);}
+.work-image:hover  .link-overlay:before {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity:1;
+}
+.work p { margin: 0; }
+.work-name {
+    display: inline-block;
+    margin: 15px 0 6px;
+    font-size: 14px;
+    font-weight:bold;
+}
+a.work-name {
+    color: #313538;
+    -webkit-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    position: relative;
+    font-size: 14px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    text-decoration: none!important;
+}
+a.work-name:hover {
+    color: rgb(102,204,0);
+}
+.tags{font-size: 12px;color:#888;}
+
+
+
+.--------响应式动画-----------{}
+.isotope-item {
+    z-index: 2;
+}
+.isotope-hidden.isotope-item {
+    pointer-events: none;
+    z-index: 1;
+}
+.isotope,
+.isotope .isotope-item {
+    -webkit-transition-duration: 0.8s;
+    -moz-transition-duration: 0.8s;
+    -ms-transition-duration: 0.8s;
+    -o-transition-duration: 0.8s;
+    transition-duration: 0.8s;
+}
+
+
+#modified_col{padding:0;}
+#modified_col .col-md-3{padding:0 10px;}
+
+
+.--------Responsive----------{}
+
+@media only screen and (min-width: 992px){
+    #modified_col .row-item,#modified_col .isotope-item{
+        width: 19.8%;}
+}
+
+@media only screen and (max-width: 490px){
+    #modified_col .row-item,#modified_col .isotope-item{width:100%;}
+}
+@media all and (min-width: 500px) and (max-width: 901px){
+    #modified_col .row-item,#modified_col .isotope-item{width:49%;}
+}
+
+
+.------------------------------------------{}
+            .-----弹出框--------{}
+.------------------------------------------{}
+/**
+ * CSS for jQuery plugin 'popup' v.1.0.0
+ * Copyright (©) by Konstantin Kachurenko <konstantin.kachurenko@gmail.com>
+ * http://konstantin-kachurenko.github.io/
+ * The MIT License (MIT) http: //opensource.org/licenses/MIT
+ */
+.popup {
+    position: fixed;
+    z-index:1000!important;
+    top: 50%;
+    left: 40%;
+    width: 50%;
+    height: auto;
+    min-width: 320px;
+    max-width: 100%;
+    max-height: 100%;
+    visibility: hidden;
+    opacity: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: rgb( 248, 248, 248 );
+    box-shadow: 0px 2px 2px 0px rgba( 0, 0, 0, .3 );
+}
+
+.popup,
+.popup-overlay {
+    z-index: 10!important;
+    -webkit-transform-style: flat;
+    transform-style: flat;
+    -webkit-transition: opacity .3s ease,left .5s,top .5s,transform .5s,-webkit-transform .5s;
+    -ms-transition: opacity .3s ease,left .5s,top .5s,transform .5s,-ms-transform .5s;
+    -o-transition: opacity .3s ease,left .5s,top .5s,transform .5s,-o-transform .5s;
+    transition: opacity .3s ease,left .5s,top .5s,transform .5s,-webkit-transform .5s,-ms-transform .5s,-o-transform .5s;
+}
+
+.popup-content {
+    position: relative;
+    padding: 5px 40px 30px 40px;
+    display: inline-block;
+}
+
+
+.popup-overlay {
+    position: fixed;
+    visibility: hidden;
+    z-index:1;
+    opacity: 0;
+    top: -25%;
+    left: 0;
+    width: 100%;
+    height: 150%;
+    background: rgba(0,0,0,.7);
+}
+
+.popup-show {
+    visibility: visible;
+    opacity: 1;
+    z-index: 1;
+}
+
+.--------Effects----------{}
+/**
+ * Effects:
+ * .effect-fade-scale, .effect-slide-left, .effect-slide-right,
+ * .effect-slide-top, .effect-newspaper, .effect-sticky
+ */
+
+.popup.effect-fade-scale {
+    -webkit-transform: scale(0.7);
+    -ms-transform: scale(0.7);
+    -o-transform: scale(0.7);
+    transform: scale(0.7);
+}
+
+.popup-show.effect-fade-scale {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+}
+
+.popup.effect-slide-left {
+    left: 20%;
+}
+
+.popup.effect-slide-right {
+    left: 80%;
+}
+
+.popup-show.effect-slide-right,
+.popup-show.effect-slide-left {
+    left: 50%;
+}
+
+.popup.effect-slide-top {
+    top: 20%;
+}
+
+.popup-show.effect-slide-top {
+    top: 50%;
+}
+
+.popup.effect-newspaper {
+    -webkit-transform: scale(0) rotate(720deg);
+    -ms-transform: scale(0) rotate(720deg);
+    -o-transform: scale(0) rotate(720deg);
+    transform: scale(0) rotate(720deg);
+}
+
+.popup-show.effect-newspaper {
+    -webkit-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    -o-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+}
+
+.popup.effect-sticky {
+    top: -100%;
+}
+
+.popup-show.effect-sticky {
+    top: 0;
+    margin-top: 0 !important;
+}
+
+
+.-------------自定义---------------{}
+.popup-title{
+    background:rgb(239,239,239);
+    padding:10px 20px;
+}
+.popup-title h3{margin:0;font-size:16px;}
+.popup-title button{float:right;}
+.popup-content h4{font-size:14px;font-weight:600;border-bottom: 1px dotted chartreuse;padding-bottom:8px;}
+.popup-content ul{padding:0;}
+.popup-content ul li{list-style-type: none;}
+.popup-content-cell{margin-top:20px;}
+.popup-content-cell p{padding-top:10px;}
+
+.popup2{
+    width:220px;height:220px;
+    position: absolute;
+    background-color:#fff;
+    right:-230px;
+}
+.popup2 img{padding:8px 8px;}
+.popup2 h4{font-size:16px;
+    font-weight:bold;margin:0;padding-left:10px;}
+.popup2 p{padding-left:10px;}
+.----------弹出框Responsive-------------{}
+
+@media all and (min-width:601px) and (max-width:801px){
+    .popup {
+        width:80%;
+        left:50%;
+    }
+    .popup2{right:0;top:100px;position:absolute;text-align: center;}
+    .popup2 p{display: none;}
+    .xs-scroll{height:600px;overflow: auto;width:100%;}
+}
+@media all and (max-width:600px){
+    .popup{
+        width:80%;
+        left:50%;
+    }
+    .popup2{
+        width: 100%;
+        height:90%;
+        margin-bottom: 20px;
+        position:relative;
+        background-color:#fff;
+        right:0px;
+        top:0px;
+        text-align: center;
+        display:none;
+    }
+    .popup2 img{margin: 0 auto;width:80%;height:90%;}
+    .popup2 h4,.popup2 p{display: none;}
+    .popup-content {
+        width:100%;
+        height:300px;
+        overflow: auto;
+    }
+}
+@media all and (min-width:802px){
+    .popup-content {
+        height: 600px;
+        overflow: scroll;
+    }
+}
+
+@media all and (min-width:1200px) {
+    .popup {
+        top: 50%;
+        left: 40%;
+        width: 50%;
+        min-width: 320px;
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+
+

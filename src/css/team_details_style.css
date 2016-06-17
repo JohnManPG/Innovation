@@ -1,0 +1,184 @@
+
+.------------------------------------------------------{}
+                     .--创业团队子页面--{}
+.------------------------------------------------------{}
+*{font-family:"微软雅黑";-webkit-font-smoothing:antialiased;}
+h2,h3{margin:0;}
+p{color:#595b5a;}
+#members_wrap a{text-decoration: none;}
+.swag {background: url(../images/list_head.jpg);width: 100%;height: 200px;margin-bottom: 20px;}
+.swag h1 {color: #fff;font-size: 2em;letter-spacing: 5px;text-align: center;margin-top: 25px;}
+.hea_1 {width: 200px;height: 80px;background-color: rgba(34, 34, 34, 0.5);margin: 60px auto;float: left;margin-left: -15px;  }
+#wrap_container{color:#666;margin: 0 auto;}
+.item_main {display: none;padding-bottom: 40px;}
+#wrap_container .item_title{width:100%;box-shadow: 0px 3px 10px #ddd;position: relative;margin-bottom: 5%;}
+#wrap_container .item_title img{width:100%;}
+#wrap_container .item_title h3{margin-bottom: 20px;padding-bottom:10px;font-size:22px;font-weight: bold;
+    border-bottom: 2px solid rgb(104,206,0); }
+#wrap_container .item_title h2{position:absolute;bottom:40%;left:20%;font-size:26px;color:white;}
+#wrap_container .item_title .apply span{display:inline-block;color:rgb(104,206,0);
+    font-weight: bold;font-size:13px;margin-top:2%;margin-bottom:3%;margin-left: 20%;}
+#wrap_container .item_title .apply button{margin:2% 2%;}
+#wrap_container .item_title .apply button:hover{margin:2% 2%;}
+#wrap_container .item_title .apply button.btn-primary{background-color:#90e192;border-color: #ffffff;}
+.btn-primary:hover{ background-color:#66e269;border-color: #ffffff;transition:all .5s;}
+#wrap_container .item_title .apply button.btn-primary:hover{background-color:#ddd;}
+#wrap_container .item_title .apply img{width:15%;position: absolute;bottom:5%;left:3%;}
+#wrap_container .col_img{position: relative;top:-20px;}
+#wrap_container .col_img img{width:80%;height:auto;border-radius:100%;margin-left: 20px;transition:all 1s;}
+#wrap_container .col_img img:hover{animation: rubberBand 0.5s;-webkit-box-reflect: below -3px
+        -webkit-gradient(linear,left top,left bottom,from(transparent),
+        color-stop(50%,transparent),to(rgba(255,255,255,0.4)));}
+#wrap_container .item_cols{box-shadow:0px 3px 10px #ddd;font-size: 16px;}
+#wrap_container .item_cols p{font-size: 16px;padding:0 8%;}
+.green_center h3{text-align: center;margin-bottom: 4%;font-size:22px;font-weight:bold;color:rgb(104,206,0);}
+
+
+.---------------------------------------------------------{}
+                   .----现有成员----{}
+.---------------------------------------------------------{}
+#members{display:none;margin-bottom: 70px;}
+#members_bg{width:100%;}
+#members_bg img{position: absolute;z-index: -1;height:440px;width:100%;}
+#members_wrap{position:relative;width:80%;margin: 0 auto;}
+#members_wrap .col-md-4{padding:4%;}
+#members_wrap .inner_item{width:95%;margin: 0 auto;}
+#members_wrap .inner_item img{width:100%;}
+#members_wrap .team_caption{background-color:#e7efb4;}
+#members_wrap .team_caption h4{color:#65ce00;text-align: center;margin:0;padding-top:15px;transition: all .5s;}
+#members_wrap .team_caption h4:hover{color:orange;}
+#members_wrap .team_caption p{padding:5%;}
+
+
+.---------------------------------------------------------{}
+                   .--Responsive--{}
+.---------------------------------------------------------{}
+@media all and (min-width: 1024px){
+    #wrap_container{width:80%;}
+}
+@media all and (min-width: 992px){
+    #wrap_container .item_cols{width:29%;}
+    #wrap_container .col_img{width:60%;margin: 0 auto}
+    #second-col{margin:0 6%;}
+}
+@media all and (max-width: 991px){
+    #wrap_container .col_img{width:30%;margin:20px;top:40%;}
+    #first-col .col_img,#third-col .col_img{float: left;}
+    #second-col .col_img{float: right;}
+    #wrap_container .item_cols p{padding:5%;text-indent:2em;}
+    #wrap_container .green_center{clear: both;}
+    #first-col,#second-col,#third-col{margin-bottom:5%;}
+}
+@media all and (max-width: 767px){
+    .hide_item{display:none;}
+    #members_wrap .team_caption p{font-size:10px;}
+    #members_wrap .team_caption h4{font-size:14px;}
+}
+@media all and (max-width: 568px){
+    #wrap_container .item_title .apply button{display:none}
+    #wrap_container .item_title .apply img{bottom:10%;left:3%;}
+    #wrap_container .col_img{width:100%;margin:20px;top:0!important;float:none;}
+}
+@media all and (max-width: 480px){
+    #members_bg{display: none;}
+    #wrap_container .item_title .apply img{bottom:12%!important;}
+    #wrap_container .col_img img{margin-left: 3%;position: relative;}
+    #members_wrap .col-xs-6{width:100%}
+    .hide_item{display:block;}
+    #wrap_container .item_title h2{font-size:20px;}
+}
+
+
+
+
+.---------------------------------------------------------{}
+                        .--动画框架--{}
+.---------------------------------------------------------{}
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+        -webkit-transform: scale(1.05);
+        -ms-transform: scale(1.05);
+        transform: scale(1.05);
+    }
+
+    70% {
+        -webkit-transform: scale(.9);
+        -ms-transform: scale(.9);
+        transform: scale(.9);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+.bounceIn {
+    -webkit-animation-name: bounceIn;
+    animation-name: bounceIn;
+}
+
+@keyframes zoomIn {
+    0% {
+        opacity: 0;
+        -webkit-transform: scale(.3);
+        -ms-transform: scale(.3);
+        transform: scale(.3);
+    }
+
+    50% {
+        opacity: 1;
+    }
+}
+
+.zoomIn {
+    -webkit-animation-name: zoomIn;
+    animation-name: zoomIn;
+}
+
+
+@keyframes rubberBand {
+    0% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+
+    30% {
+        -webkit-transform: scaleX(1.25) scaleY(0.75);
+        -ms-transform: scaleX(1.25) scaleY(0.75);
+        transform: scaleX(1.25) scaleY(0.75);
+    }
+
+    40% {
+        -webkit-transform: scaleX(0.75) scaleY(1.25);
+        -ms-transform: scaleX(0.75) scaleY(1.25);
+        transform: scaleX(0.75) scaleY(1.25);
+    }
+
+    60% {
+        -webkit-transform: scaleX(1.15) scaleY(0.85);
+        -ms-transform: scaleX(1.15) scaleY(0.85);
+        transform: scaleX(1.15) scaleY(0.85);
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        transform: scale(1);
+    }
+}
+
+.rubberBand {
+    -webkit-animation-name: rubberBand;
+    animation-name: rubberBand;
+}
